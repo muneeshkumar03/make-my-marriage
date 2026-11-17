@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: wedding-web
+    runtime: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: DEMO_MODE
+        value: "true"
+  - type: worker
+    name: wedding-worker
+    runtime: node
+    buildCommand: npm ci
+    startCommand: npm run worker
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: DEMO_MODE
+        value: "true"

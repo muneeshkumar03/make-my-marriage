@@ -1,0 +1,2 @@
+export type JobType="photo.process"|"photo.delete"|"email.send"|"wedding.retention";
+export type JobRecord={_id:string;type:JobType;payload:Record<string,unknown>;weddingId?:string;state:"queued"|"running"|"completed"|"failed"|"cancelled";priority:number;runAt:Date;attempts:number;maxAttempts:number;lockedBy?:string;lockedUntil?:Date;idempotencyKey:string;lastError?:string;createdAt:Date;updatedAt:Date};

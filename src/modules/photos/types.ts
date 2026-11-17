@@ -1,0 +1,1 @@
+export type PhotoRecord={_id:string;weddingId:string;albumId:string;originalKey:string;displayKey?:string;thumbnailKey?:string;contentType?:string;byteSize:number;status:"awaiting_upload"|"queued"|"processing"|"ready"|"failed"|"deleted";createdAt:Date};

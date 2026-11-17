@@ -1,0 +1,1 @@
+export type EmailDeliveryRecord={_id:string;weddingId:string;deliveryKey:string;recipient:string;template:string;status:"queued"|"sending"|"accepted"|"delivered"|"failed";providerMessageId?:string;attemptCount:number;createdAt:Date;updatedAt:Date};

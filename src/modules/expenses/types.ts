@@ -1,0 +1,1 @@
+export type ExpenseRecord={_id:string;weddingId:string;eventId?:string|null;title:string;amountMinor:number;currency:string;category:string;expenseDate:Date;notes?:string;actorUserId:string;createdAt:Date};

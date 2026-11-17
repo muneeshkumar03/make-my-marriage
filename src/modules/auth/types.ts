@@ -1,0 +1,3 @@
+export type UserRecord={_id:string;displayName:string;email:string;emailNormalized:string;passwordCredential:{scheme:"scrypt";salt:string;hash:string;parameters:{N:number;r:number;p:number;keyLength:number};updatedAt:Date};lastLoginAt:Date|null;createdAt:Date;updatedAt:Date};
+export type AuthTokenRecord={_id:string;purpose:"password_reset"|"manager_invitation";tokenHash:string;userId?:string;membershipId?:string;emailNormalized:string;expiresAt:Date;consumedAt:Date|null;createdAt:Date};
+export type MembershipRecord={_id:string;weddingId:string;userId?:string;displayName:string;emailNormalized:string;role:"admin"|"manager";status:"invited"|"active"|"revoked";createdAt:Date;updatedAt:Date};

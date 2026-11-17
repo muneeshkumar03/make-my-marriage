@@ -1,0 +1,1 @@
+export type WeddingRecord={_id:string;slug:string;couple:{partnerOne:string;partnerTwo:string};timeZone:string;currency:string;locale:"en";lifecycle:"active"|"archived"|"deleting"|"deleted";createdAt:Date;updatedAt:Date};

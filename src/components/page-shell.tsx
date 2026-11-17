@@ -1,0 +1,2 @@
+import { DemoNotice } from "@/components/demo-notice";
+export function PageShell({eyebrow,title,description,action,children}:{eyebrow:string;title:string;description:string;action?:React.ReactNode;children:React.ReactNode}){return <div className="content"><DemoNotice/><div className="title-row"><div><div className="eyebrow">{eyebrow}</div><h1>{title}</h1><p>{description}</p></div>{action}</div>{children}</div>}

@@ -1,0 +1,1 @@
+export type EventRecord={_id:string;weddingId:string;name:string;description?:string;startAt:Date;endAt?:Date;timeZone:string;venue:{name:string;address:string;mapUrl?:string};guestInstructions?:string;status:"draft"|"published"};
